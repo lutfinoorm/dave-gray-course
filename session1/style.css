@@ -1,0 +1,31 @@
+html {
+  font-size: 22px;
+}
+
+body {
+  background-color: #333;
+  color: whitesmoke;
+}
+
+a {
+  color: wheat;
+  text-decoration: none;
+}
+
+abbr {
+  font-style: italic;
+  text-decoration: none;
+}
+
+a:visited {
+  color: tan;
+}
+
+a:hover, a:active {
+  color: #eee;
+}
+
+button {
+  background-color: tomato;
+  font-size: 1.2rem;
+}
