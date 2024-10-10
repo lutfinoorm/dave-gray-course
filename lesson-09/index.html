@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lutfinoor Muhamad">
+    <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML from Dave Gray">
+    <title>My First Webpage Lesson</title>
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>
+        <a href="..">My Goals for the Year</a>
+      </h1>     <!-- You only want one h1 element per page -->
+
+      <p>This is my web page created from lesson 9.</p>
+
+      <nav aria-label="primary-navigation"> <!-- addiang aria-label attribute with primary navigation so it'll be accessible for other technology -->
+        <ul>
+          <li><a href="#html">Learning HTML</a></li>
+          <li><a href="#vacation">Planning a Vacation</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr>
+    <!-- in context of semantic elements, hr indicates a topic change -->
+
+    <main>
+      <article id="html">
+
+        <h2>I'm Ready to Learn HTML</h2>
+        <p>This is my web page.</p>
+
+        <section>
+
+          <h3>HTML5</h3>
+          <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="300" height="300" />
+          <!-- the src attribute in this img element is full relative path
+          the titile attribute better provided as a complimentary which not displayed in page
+          the width and height attributes better provided to avoid cummuluative layout shift -->
+
+          <figure>
+            <figcaption>An example of HTML5 code</figcaption>
+            <code>
+              <p>
+                &lt;h1&gt; Hello World! &lt;/h1&gt;
+              </p>
+            </code>
+          </figure>
+        </section>
+
+        <section>
+        <h3>My Daily Schedule</h3>
+          <p>Let me tell you how:</p>
+
+          <!-- ol stands for Ordered List -->
+          <ol>
+            <li>... I learn more about web dev.</li>
+            <li>... I plan out my schedule.</li>
+            <li>... I use resources from
+              <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org/" target="_blank">MDN</a>
+                <!-- this is the example of absolute reference -->
+              </abbr>.
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>Guess the <mark>number of hours</mark> I code per day?</summary>
+              <p>I start at <time datetime="08:00">8 AM</time> and I write code for <time datetime="PT3H">3 hours</time> every morning.</p>
+            </details>
+          </aside>
+          
+          <br>
+
+          <table>
+            <caption>My Daily Schedule</caption>
+            
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td><time datetime="8:00">8 AM</time> - <time datetime="11:00">11 AM</time></td>
+                <td>Start Code</td>
+              </tr>  
+              <tr>
+                <th scope="row">Break</th>
+                <td><time datetime="11:00">11 AM</time> - <time datetime="12:00">12 PM</time></td>
+                <td>Eat Lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td><time datetime="12:00">12 PM</time> - <time datetime="17:00">5 PM</time></td>
+                <td>Study for Other Courses</td>
+              </tr>
+              <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">All Other Times</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <td colspan="3">And that's what I do every day, 5 days a week. Just eat, sleep, code, and recharge.</td>
+            </tfoot>
+
+          </table>
+
+        </section>
+      </article>
+
+      <hr>
+        
+      <article id="vacation">
+
+        <h2>I'm Also Planning a Vacation</h2>
+        <p>I've been working hard and <em>really need a getaway</em>.</p>
+        <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p>
+
+        <section>
+          <h3>Places I'd like to Visit</h3>
+          <ul>
+            <li>
+              <p>I've heard good things about the Carribean.</p>
+              <figure>
+                <img src="img/caribbean.jpg" alt="Carribean Beach" title="I want to visit Carribean Beach." width="400" height="225" loading="lazy" />
+                <figcaption>Carribean Beach Getaway</figcaption>
+              </figure>
+            </li>
+            <li><p>I've heard good things about going here:</p></li>
+            <address>
+              Margaritaville Island Reserve Riviera Cancun <br>
+              Bahia Petempich Puerto Morelos, Mexico <br>
+              Colonia Morelos, Mexico 77500
+            </address>
+            <figure>
+              <img src="img/vacation.jpg" alt="Cancun Vacaation" title="It's 5 o'clock Somewhere!" loading="lazy" width="400" height="267" />
+            </figure>
+            <figcaption>
+              A Carribean Vacation Image
+            </figcaption>
+          </ul>
+        </section>
+
+        <!-- TODO: Add more places -->
+        <section>
+          <h3>Places I Want to Avoid</h3>
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I heard this is <strong>cold</strong>!</dd>
+
+            <dt>South Pole</dt>
+            <dd>This is also <strong>cold</strong>!</dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>These are also <strong>cold</strong>!</dd>
+          </dl>
+        </section>
+
+      </article>
+
+      <hr>
+
+      <section>
+
+        <h2>My Note Section</h2>
+        <p>In this section we learn how to create a table and add a semantic element to it by using: thead, tbody, and tfoot</p>
+        <p>Also we can use atrribute scope on every th element.</p>
+
+
+        <h3>Useful Resources</h3>
+        <ul>
+          <li><a href="https://validator.w3.org/">W3C HTML Validator</a></li>
+          <li><a href="https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references">Character Chart</a></li>
+          <li><a href="https://loremipsum.io/21-of-the-best-placeholder-image-generators">Image Generator</a></li>
+          <li>🔗 Unsplash.com</li>
+          <li>🔗 Pexels.com</li>
+          <li>🔗 Gratisography.com</li>
+          <li>🔗 Pixabay.com</li>
+        </ul>
+
+      </section>
+    </main>
+
+      <hr>
+
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy; <a href="about.html">Lutfinoor Muhamad</a> &gt;&gt;&gt;
+      </p>
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+    </footer>
+
+
+  </body>
+
+  
+</html>
