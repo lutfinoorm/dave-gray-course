@@ -1,3 +1,12 @@
+table {
+  width: 80%;
+  table-layout: fixed;
+}
+
+th, td {
+  width: auto;
+}
+
 table, th, tr, td, caption {
   border: 1px solid black;
   border-collapse: collapse;
