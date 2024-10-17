@@ -4,17 +4,18 @@
   <head>
     <meta charset="UTF-8">
     <meta name="author" content="Lutfinoor Muhamad">
-    <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML from Dave Gray">
+    <meta name="description" content="The Official Website for The Little Taco Shop">
     <title>Little Taco Shop</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
+
   <body>
     <header>
       <h1>Welcome to The Little Taco Shop</h1>
       <nav>
         <ul>
-          <li><a href="#about">About LTS</a></li>
+          <li><a href="#about">About <abbr title="The Little Taco Shop">LTS</abbr></a></li>
           <li><a href="#menu">Our Menu</a></li>
           <li><a href="hours.html">Store Hours</a></li>
           <li><a href="contact.html">Contact Us</a></li>
@@ -24,17 +25,17 @@
           <figcaption>Tacos and Drink</figcaption>
         </figure>
       </nav>
-
-      <hr>
     </header>
+
+    <hr>
 
     <main>
       <section>
         <h2 id="about">About LTS</h2>
         <p><abbr title="Little Taco Shop">LTS</abbr> was founded in 2022. Out shop was built from a <strong>love of tacos</strong> 🌮🌮🌮. We hope our shop adds a unique and interseting place to our little town.</p>
 
-        <h3>Taco Trivia</h3>
         <aside>
+          <h3>Taco Trivia</h3>
           <details>
             <summary>When did tacos first appear in the United States?</summary>
             <p>Search in the Google.</p>
@@ -51,15 +52,17 @@
           <caption>Our Tacos</caption>
 
           <thead>
-            <th>Tacos</th>
-            <th>Qty</th>
-            <th>Price</th>
+            <tr>
+              <th>Tacos</th>
+              <th scope="col"><abbr title="Quantity">Qty</abbr></th>
+              <th scope="col">Price</th>  
+            </tr>
           </thead>
 
           <tbody>
 
             <tr>
-              <th rowspan="3">Crunchy</th>
+              <th scope="row" rowspan="3">Crunchy</th>
               <td>1</td>
               <td>$1.50</td>
             </tr>

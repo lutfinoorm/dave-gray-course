@@ -1,0 +1,32 @@
+body {
+  font-size: 22px;
+}
+/* rule in css selector have inheritance attribute, so it will applied to element inside of it */
+
+h1, h2 {
+  color: blue;
+}
+/* this is group selectors */
+
+#second {
+  font-weight: bolder;
+}
+
+.gray {
+  color: gray;
+}
+
+p {
+  color: purple;
+  font-weight: lighter;
+}
+
+p span {
+  text-transform: uppercase;
+  background-color: gold;
+}
+/* selecting element inside of an element, in this example selecting span inside element of p */
+
+/* Class selector is more spesific. Therefore, it will overrule a general selector */
+/* More spesific than class selector is id selector */
+/* there is universal selector use '*' which will select all element */
