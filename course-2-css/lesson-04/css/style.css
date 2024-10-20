@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-size: 1.5rem;
+  width: 50%;
+  background-color: rebeccapurple;
+}
+
+p {
+  width: 40ch;
+}
+
+.em {
+  font-size: 1.5em;
+}
+
+.rem {
+  font-size: 1.5rem;
+}
+
+h1, h2, h3 {
+  border: 2px solid red;
+  font-size: 3rem;
+  padding: 0.25em;
+  /* The actual number of em style is referencing font size of its element. So in this case, if the actual font size browser 16px, it will multiply by 3 then multiply by 0.25. 16*3*0.25 = 12px */
+}
